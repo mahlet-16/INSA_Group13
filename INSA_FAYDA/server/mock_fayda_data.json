@@ -1,0 +1,20 @@
+[
+  {
+    "FullName": "Abebe Kebede",
+    "Photo": "uploads/1754486610012.png",
+    "FAYDA_ID": "123456",
+    "Address": "Addis Ababa, Ethiopia"
+  },
+  {
+    "FullName": "Sara Alemu",
+    "Photo": "uploads/1754488216409.jpg",
+    "FAYDA_ID": "654321",
+    "Address": "Adama, Ethiopia"
+  },
+  {
+    "FullName": "Mulugeta Tesfaye",
+    "Photo": "uploads/1754490485112.jpg",
+    "FAYDA_ID": "789012",
+    "Address": "Bahir Dar, Ethiopia"
+  }
+]
