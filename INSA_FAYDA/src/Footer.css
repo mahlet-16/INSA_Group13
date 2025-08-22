@@ -1,0 +1,38 @@
+.footer {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: rgba(255, 255, 255, 0.92);
+  padding: 1.2rem 1rem;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.footer-links {
+  margin-top: 0.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.footer-links a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  transition: color 0.2s;
+}
+
+.footer-links a:hover {
+  color: #02EACB; /* header accent */
+}
+
+.footer-links a svg { color: currentColor; }
+
+@media (max-width: 600px) {
+  .footer {
+    font-size: 0.9rem;
+    padding: 0.75rem 0.5rem;
+  }
+} 
+
