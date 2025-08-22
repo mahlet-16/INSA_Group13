@@ -1,0 +1,65 @@
+.contact-page section { margin-bottom: 3rem; }
+
+/* Hero */
+.contact-hero { position: relative; background-size: cover; background-position: left center; min-height: 50vh; display:flex; align-items:center; }
+.contact-hero__overlay { position:absolute; inset:0; background: rgba(0,0,0,0.6); }
+.contact-hero__inner { position:relative; z-index:1; max-width:1100px; margin:0 auto; padding:3rem 1.5rem; }
+.contact-hero__title { color:#fff; font-weight:900; font-size:4rem; line-height:1.05; letter-spacing:-0.5px; margin:0; text-shadow:0 2px 10px rgba(0,0,0,0.35); }
+.accent { color:#02EACB; background: linear-gradient(90deg, #47F8DF 0%, #02EACB 100%); -webkit-background-clip:text; background-clip:text; color: transparent; }
+
+/* Split */
+.contact-split__container { max-width:1100px; margin:0 auto; padding:0 1.5rem; display:grid; grid-template-columns: 1fr 1fr; gap:1.5rem; }
+.contact-card { background:#f6f9fb; border:1px solid #e6eef2; border-radius:10px; }
+.contact-card__header { padding:0.5rem 0.75rem; background:#eef5f8; border-bottom:1px solid #e6eef2; border-top-left-radius:10px; border-top-right-radius:10px; color:#2C5B72; font-weight:800; }
+.contact-card__body { padding:0.8rem 0.75rem; }
+.contact-hours > div { display:flex; justify-content:space-between; padding:0.25rem 0; color:#355468; }
+
+.contact-form { background:#fff; border:1px solid #e6eef2; border-radius:10px; padding:1rem; display:flex; flex-direction:column; gap:0.75rem; }
+.contact-form__title { margin:0; color:#2C5B72; font-size:1.4rem; font-weight:800; }
+.contact-form__subtitle { margin:0 0 0.25rem; color:#355468; }
+.contact-input { display:flex; flex-direction:column; gap:0.3rem; color:#355468; }
+.contact-input input, .contact-input textarea { border:1px solid #e6eef2; border-radius:8px; padding:0.6rem 0.7rem; outline:none; }
+.contact-btn { align-self:flex-start; background:#47F8DF; color:#0b2a33; font-weight:700; border:none; border-radius:999px; padding:0.5rem 1rem; cursor:pointer; }
+
+/* Full background */
+.contact-full { position:relative; background-size:cover; background-position:center; min-height:70vh; display:flex; align-items:center; }
+.contact-full__overlay { position:absolute; inset:0; background: rgba(0,0,0,0.45); }
+.contact-full__inner { position:relative; z-index:1; max-width:1100px; margin:0 auto; padding:2rem 1.5rem; display:grid; grid-template-columns: 1fr 1fr; grid-template-rows: auto auto auto; gap:1rem 1.5rem; color:#fff; }
+.contact-full__left { grid-column: 1 / 2; }
+.contact-full__title { margin:0 0 0.25rem; font-size:2.2rem; font-weight:900; }
+.contact-full__subtitle { margin:0 0 1rem; color:#e8f1f5; }
+.contact-socials { display:flex; gap:0.5rem; margin-bottom:0.75rem; }
+.contact-socials a { color:#fff; opacity:0.85; }
+.contact-mini { display:flex; flex-direction:column; gap:0.35rem; margin-top:0.75rem; }
+.mini-row { display:flex; align-items:center; gap:0.4rem; }
+.contact-links { margin-top:0.75rem; color:#e8f1f5; }
+.contact-links .links-label { color:#02EACB; margin-right:0.4rem; }
+.contact-links a { color:#fff; opacity:0.9; text-decoration:none; }
+.contact-links a:hover { text-decoration:underline; }
+
+.contact-full__form { display:flex; flex-direction:column; gap:0.75rem; grid-column: 1 / -1; }
+.contact-full__form .label-row { display:grid; grid-template-columns: 1fr 1fr; gap:0.75rem; color:#e8f1f5; font-size:0.9rem; }
+.contact-full__form .form-row { display:grid; grid-template-columns: 1fr 1fr; gap:0.75rem; }
+.contact-full__form input, .contact-full__form textarea { border: none; border-radius:8px; padding:0.6rem 0.7rem; background: rgba(255,255,255,0.95); color:#0b2a33; }
+.contact-full__form textarea { width: 80%; max-width: 760px; }
+.contact-full__form button { align-self:flex-start; background:#47F8DF; color:#0b2a33; border:none; border-radius:999px; padding:0.5rem 1rem; font-weight:700; cursor:pointer; }
+
+/* Bottom row 
+   Layout: left 2 columns (address, email), right 2 columns (links, phone) on desktop */
+.contact-full__bottom { grid-column: 1 / -1; display:grid; grid-template-columns: repeat(4, 1fr); gap:0.75rem; align-items:center; }
+.contact-full__bottom .bottom-item { display:flex; align-items:center; gap:0.4rem; color:#e8f1f5; }
+.contact-full__bottom .links .links-label { color:#02EACB; margin-right:0.4rem; }
+
+@media (max-width: 900px) {
+  .contact-split__container { grid-template-columns: 1fr; }
+  .contact-full__inner { grid-template-columns: 1fr; grid-template-rows: auto auto auto; }
+  .contact-hero__title { font-size:2.8rem; }
+  .contact-full__bottom { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .contact-hero { min-height: 40vh; }
+  .contact-hero__title { font-size:2.2rem; }
+}
+
+
