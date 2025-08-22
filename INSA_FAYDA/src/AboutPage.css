@@ -1,0 +1,38 @@
+.about-page section { margin-bottom: 3rem; }
+
+/* Who We Are */
+.about-hero { position: relative; background-size: cover; background-position: center; min-height: 65vh; display: flex; align-items: flex-end; }
+.about-hero__overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.55)); }
+.about-hero__inner { position: relative; z-index: 1; width: 100%; max-width: 1100px; margin: 0 auto; padding: 2rem 1.5rem 0; }
+.about-hero__title { color: #fff; text-align: center; font-size: 3rem; font-weight: 900; margin: 0 0 1rem 0; }
+.about-hero__accent { color: #02EACB; }
+
+.about-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; padding-bottom: 2rem; }
+.about-card { background: rgba(255,255,255,0.95); border: 1px solid rgba(0,0,0,0.06); border-radius: 14px; padding: 1.1rem; box-shadow: 0 10px 30px rgba(0,0,0,0.10); text-align: center; }
+.about-card__icon { font-size: 1.6rem; color: #02EACB; margin-bottom: 0.35rem; }
+.about-card__title { margin: 0.25rem 0 0.35rem 0; font-size: 1.2rem; font-weight: 800; color: #0f172a; }
+.about-card__text { margin: 0; color: #334155; font-size: 0.95rem; line-height: 1.5; }
+
+/* Why Choose Us */
+.about-why { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+.about-why__title { text-align: center; font-size: 2.2rem; font-weight: 900; margin: 0 0 1.5rem; }
+.why-cards { display: grid; grid-template-columns: repeat(3,1fr); gap: 1.25rem; }
+.why-card { background: linear-gradient(180deg, #298AB5, #298AB5); color: #ffffff; padding: 1.25rem; border-radius: 18px; text-align: center; box-shadow: 0 12px 34px rgba(0,0,0,0.12); display: flex; flex-direction: column; justify-content: center; align-items: center; gap: 0.5rem; min-height: 280px; }
+.why-card__icon-wrap { width: 66px; height: 66px; border-radius: 50%; border: 3px solid #18DED4; display: flex; align-items: center; justify-content: center; margin-bottom: 0.5rem; }
+.why-card__icon-svg { color: #18DED4; width: 34px; height: 34px; }
+.why-card__title { margin: 0.25rem 0; font-size: 1.15rem; font-weight: 800; color: #03182B; }
+.why-card__text { margin: 0; font-size: 0.95rem; line-height: 1.55; color: #ffffff; }
+
+@media (max-width: 900px) {
+  .about-hero { min-height: 50vh; }
+  .about-hero__title { font-size: 2.4rem; }
+  .about-cards, .why-cards { grid-template-columns: 1fr; }
+  .why-card { min-height: 220px; }
+}
+
+@media (max-width: 600px) {
+  .about-hero__title { font-size: 2rem; }
+  .why-card { min-height: 200px; }
+}
+
+

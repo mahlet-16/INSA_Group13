@@ -1,0 +1,257 @@
+.service-page { background: #fff; }
+/* Increase vertical rhythm between sections */
+.service-page section { margin-bottom: 3rem; }
+
+/* Section 1: Hero */
+.svc-hero {
+  position: relative;
+  min-height: 48vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+}
+.svc-hero__overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.35); }
+.svc-hero__inner { position: relative; z-index: 1; padding: 2.5rem 2rem; display: flex; flex-direction: column; gap: 1.2rem; }
+.svc-hero__title { color: #fff; font-size: 2.6rem; font-weight: 800; margin: 0; }
+.svc-accent { color: #02EACB; }
+.svc-hero__cards { display: flex; gap: 1rem; }
+.svc-hero__card { width: 180px; height: 100px; background: rgba(255,255,255,0.2); border-radius: 12px; backdrop-filter: blur(2px); }
+
+/* Section 2: What We Offer */
+.svc-what { position: relative; background-size: cover; background-position: center; padding: 3rem 0; }
+.svc-what--solid { background: #0b1a24; }
+.svc-what--light { background: #ffffff; }
+.svc-what--dark { position: relative; background-size: cover; background-position: center; }
+.svc-what__overlay { position: absolute; inset: 0; background: rgba(0,0,0,0.55); }
+.svc-what__inner { position: relative; z-index: 1; max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; }
+.svc-what__title { color: #ffffff; font-size: 2.2rem; font-weight: 800; margin: 0 0 1.2rem 0; text-shadow: 0 2px 8px rgba(0,0,0,0.3); }
+.svc-what--light .svc-what__title { color: #1E5D62; font-size: 2.8rem; font-weight: 800; margin: 0 0 1.2rem 0; text-shadow: none; }
+.svc-what--light .svc-what__desc { color: #1E5D62; }
+.svc-what--light .svc-what__item-title { color: #1E5D62; }
+.svc-what--light .svc-what__item { color: #1E5D62; }
+.svc-what__two-col { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center; }
+.svc-what__media { display: flex; justify-content: center; }
+.svc-what__finger { width: 360px; height: 360px; background-size: cover; background-position: center; border-radius: 50%; box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
+.svc-what__finger-img { width: 360px; height: 360px; object-fit: cover; border-radius: 50%; box-shadow: 0 20px 50px rgba(0,0,0,0.35); }
+.svc-what__content-col { }
+.svc-what__list { display: grid; grid-template-columns: 1fr; gap: 0.9rem; }
+.svc-what__item { display: grid; grid-template-columns: auto 1fr; gap: 0.8rem; align-items: start; color: #ffffff; }
+.svc-what__num { width: 34px; height: 34px; border-radius: 50%; background: rgba(255,255,255,0.15); border: 2px solid rgba(255,255,255,0.9); color: #fff; display:flex; align-items:center; justify-content:center; font-weight:800; }
+.svc-what__item-title { margin: 0; font-size: 1.2rem; font-weight: 800; color: #ffffff; }
+.svc-what__desc { margin: 0.25rem 0 0 0; font-size: 0.95rem; color: rgba(255,255,255,0.9); }
+.svc-what__img { width: 360px; height: 360px; object-fit: cover; border-radius: 50%; box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+
+/* Section 3: What We Offer - Two-column Layout */
+.svc-what-we-offer {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.svc-what-we-offer__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.svc-what-we-offer__container {
+  position: relative;
+  z-index: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  width: 100%;
+}
+
+.svc-what-we-offer__title {
+  color: #ffffff;
+  font-size: 3.5rem;
+  font-weight: 800;
+  text-align: center;
+  margin: 0 0 4rem 0;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+}
+
+/* Two-column layout */
+.svc-what-we-offer__content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.svc-what-we-offer__left-side {
+  /* Left side shows background image with fingerprint */
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.svc-what-we-offer__services {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.svc-what-we-offer__service-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 2rem;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.svc-what-we-offer__service-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.svc-what-we-offer__service-content {
+  flex: 1;
+}
+
+.svc-what-we-offer__service-title {
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-weight: 800;
+  margin: 0 0 1rem 0;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+}
+
+.svc-what-we-offer__service-desc {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+}
+
+.svc-what-we-offer__number {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.15);
+  border: 3px dashed rgba(255, 255, 255, 0.8);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.8rem;
+  flex-shrink: 0;
+  box-shadow: 0 4px 15px rgba(255, 255, 255, 0.2);
+}
+
+/* Section 3: Info */
+.svc-info { padding: 3rem 0; }
+.svc-info--bg {
+  position: relative;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 100vh;
+}
+.svc-info--bg .svc-info__container { position: relative; z-index: 1; }
+.svc-info__container--split { display: grid; grid-template-columns: 0.6fr 1.4fr; gap: 2rem; }
+.svc-info__text--on-image .svc-info__title { color: #ffffff; text-shadow: 0 2px 8px rgba(0,0,0,0.35); }
+.svc-info__text--on-image .svc-info__para { color: rgba(255,255,255,0.92); text-shadow: 0 1px 4px rgba(0,0,0,0.25); }
+.svc-info__container { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem; display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; align-items: center; }
+.svc-info__title { margin: 0 0 1rem 0; color: #2C5B72; font-size: 2.2rem; font-weight: 800; }
+.svc-info__para { color: #355468; font-size: 1rem; line-height: 1.6; margin: 0 0 0.8rem 0; }
+.svc-info__media img { width: 100%; height: auto; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.12); }
+
+@media (max-width: 1200px) {
+  .svc-what__two-col { grid-template-columns: 1fr 0.9fr; }
+  .svc-what--light .svc-what__title { font-size: 2.4rem; }
+  .svc-what-we-offer__content { gap: 3rem; }
+}
+
+@media (max-width: 900px) {
+  .svc-info__container { grid-template-columns: 1fr; }
+  .svc-hero { min-height: 40vh; }
+  .svc-hero__title { font-size: 2.2rem; }
+  .svc-hero__cards { display: none; }
+  .svc-what__two-col { grid-template-columns: 1fr; }
+  .svc-what__media { order: -1; }
+  .svc-what__finger { width: 260px; height: 260px; }
+  .svc-what__finger-img { width: 260px; height: 260px; }
+  .svc-what__img { width: 260px; height: 260px; }
+  .svc-info--bg { min-height: 80vh; }
+  
+  .svc-what-we-offer__content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .svc-what-we-offer__left-side {
+    min-height: 200px;
+  }
+  
+  .svc-what-we-offer__title {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+  }
+  
+  .svc-what-we-offer__service-item {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .svc-what-we-offer__service-title {
+    font-size: 1.6rem;
+  }
+  
+  .svc-what-we-offer__service-desc {
+    font-size: 1.1rem;
+  }
+  
+  .svc-what-we-offer__number {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .svc-hero { min-height: 36vh; }
+  .svc-hero__title { font-size: 1.9rem; }
+  .svc-what--light .svc-what__title { font-size: 2rem; }
+  .svc-what__img { width: 220px; height: 220px; }
+  .svc-info__text--on-image .svc-info__title { font-size: 2rem; }
+  
+  .svc-what-we-offer__title {
+    font-size: 2.5rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .svc-what-we-offer__service-item {
+    padding: 1.2rem;
+    gap: 1.2rem;
+  }
+  
+  .svc-what-we-offer__service-title {
+    font-size: 1.4rem;
+  }
+  
+  .svc-what-we-offer__service-desc {
+    font-size: 1rem;
+  }
+  
+  .svc-what-we-offer__number {
+    width: 50px;
+    height: 50px;
+    font-size: 1.3rem;
+  }
+}
+
+
