@@ -1,70 +1,122 @@
-+\788]70e# Getting Started with Create React App
+# 🇪🇹 FAYDA National ID Verification & Access Control System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A unified web platform that allows Ethiopian companies, institutions, and facilities to verify users and control secure access using the **Ethiopian National ID (FAYDA)**. Built with **React.js**, **Node.js**, **Express**, and **MySQL (via MAMP)**.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 📖 What is this?
 
-### `npm start`
+A **smart access control and verification system** that uses Ethiopia's mandatory National ID as a universal digital ID pass—for schools, offices, hospitals, and government facilities.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Think of it as:**  
+➡️ "One ID, Everywhere Access"  
+➡️ "Verified once, used many places"
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 🎯 Why Do We Need This?
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+| Benefit     | Description                                                                 |
+|-------------|-----------------------------------------------------------------------------|
+| 🔒 Security | Prevent unauthorized people from entering restricted areas                  |
+| ⚡ Efficiency | No need for extra ID cards—just use your National ID                        |
+| 🛰 Tracking  | Monitor who accessed what, where, and when                                 |
+| 🚨 Safety    | Get alerts for blacklisted or unauthorized individuals                     |
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🔧 How It Works
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. National ID is scanned or entered
+2. The system checks:
+   - Whether the user is in FAYDA (via API)
+   - Whether the user is registered with the organization
+   - Whether the user is allowed access now
+3. A decision is made: ✅ Access / ❌ Denied
+4. Log is saved for security monitoring
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+**Flow:**  
+`National ID → Check in FAYDA & DB → Verify Role & Schedule → Decision → Activity Logged`
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## ✨ Core Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 🔐 Access Control
+- National ID-based identity scanning (manual or via RFID/NFC)
+- Role-based permissions: Student, Staff, Visitor, Admin
+- Time-based access windows (e.g. school hours, shifts)
+- Temporary passes for visitors
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 🛡 Security
+- Real-time alerts for unauthorized or blacklisted users
+- Complete access logs and audit trails
+- Emergency lockdown triggers
+- Company-specific databases secured via MAMP
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### 📊 Monitoring
+- Live dashboards with access logs per company
+- Reports and visual analytics
+- Occupancy tracking and statistics
+- Security incident management
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 🏢 Use Cases
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+| Location             | Who Gets Access          | When                          |
+|----------------------|--------------------------|-------------------------------|
+| 🏫 Schools           | Students, Teachers        | Class hours, school events    |
+| 🏢 Offices           | Employees, Contractors    | Work hours, meeting times     |
+| 🏛 Government Bldgs  | Citizens, Officials       | Appointments, working hours   |
+| 🏥 Hospitals         | Patients, Doctors, Guests | Visiting hours, appointments  |
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🌐 Admin & Company Portal
 
-### Analyzing the Bundle Size
+### Admin:
+- Register new companies
+- View and manage all companies
+- Delete or disable accounts
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Company:
+- Login securely with email/password
+- Add, update, or delete users (students/employees)
+- View verification logs
+- Dashboard access for real-time checks
 
-### Making a Progressive Web App
+### User:
+- Register themselves under a verified company
+- Use National ID as login and verification
+- Check their status (e.g., "Temesgen Abdissa is working as ENGINEER at XYZ")
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## 📂 Tech Stack
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+| Layer      | Technology               |
+|------------|--------------------------|
+| Frontend   | React.js                 |
+| Backend    | Node.js + Express.js     |
+| Database   | MySQL (via MAMP)         |
+| Auth       | JWT                      |
+| ID Check   | FAYDA API Integration    |
+| Optional   | RFID/NFC hardware        |
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+# Contributors ✍️ 
+
+Hebron Enyew Yitbarek
+
+Temesgen Abdissa
+
+Endrias Eshetu Egata
+
+Mahlet Amenu
+
+
+
