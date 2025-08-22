@@ -107,9 +107,65 @@ db.query(
   }
 );
 
+// Ensure companies table exists (used across many endpoints)
+db.query(
+  `CREATE TABLE IF NOT EXISTS companies (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(100) NOT NULL,
+    phone VARCHAR(20),
+    address VARCHAR(255),
+    gmail VARCHAR(120) NOT NULL,
+    company_name VARCHAR(150) NOT NULL,
+    company_logo VARCHAR(255),
+    category VARCHAR(60),
+    password_hash VARCHAR(255) NOT NULL,
+    db_name VARCHAR(120) NOT NULL,
+    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
+    UNIQUE KEY uq_companies_username (username),
+    UNIQUE KEY uq_companies_gmail (gmail)
+  ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;`,
+  (err) => {
+    if (err) {
+      console.error('Error creating companies table:', err);
+    }
+  }
+);
+
 // Test route
 app.get('/', (req, res) => {
   res.send('Express server is running!');
+});
+
+// Check username availability
+app.get('/check-username/:username', (req, res) => {
+  const { username } = req.params;
+  if (!username) {
+    return res.status(400).json({ message: 'Username is required' });
+  }
+  
+  db.query('SELECT id FROM companies WHERE username = ?', [username], (err, results) => {
+    if (err) {
+      console.error('Error checking username:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    res.json({ available: results.length === 0 });
+  });
+});
+
+// Check email availability
+app.get('/check-email/:email', (req, res) => {
+  const { email } = req.params;
+  if (!email) {
+    return res.status(400).json({ message: 'Email is required' });
+  }
+  
+  db.query('SELECT id FROM companies WHERE gmail = ?', [email], (err, results) => {
+    if (err) {
+      console.error('Error checking email:', err);
+      return res.status(500).json({ message: 'Database error' });
+    }
+    res.json({ available: results.length === 0 });
+  });
 });
 
 // Update /registerCompany to create a new DB and users table
@@ -156,7 +212,19 @@ app.post('/registerCompany', upload.single('company_logo'), async (req, res) => 
           (err3, result) => {
             if (err3) {
               console.error('Error inserting company:', err3);
-              return res.status(500).json({ message: 'Database error.' });
+              
+              // Handle duplicate entry errors
+              if (err3.code === 'ER_DUP_ENTRY') {
+                if (err3.message.includes('uq_companies_gmail')) {
+                  return res.status(400).json({ message: 'This email address is already registered. Please use a different email.' });
+                } else if (err3.message.includes('uq_companies_username')) {
+                  return res.status(400).json({ message: 'This username is already taken. Please choose a different username.' });
+                } else {
+                  return res.status(400).json({ message: 'A company with these details already exists.' });
+                }
+              }
+              
+              return res.status(500).json({ message: 'Database error. Please try again.' });
             }
             res.json({ message: 'You have successfully registered!' });
           }
@@ -185,7 +253,17 @@ app.post('/login', (req, res) => {
       const match = await bcrypt.compare(password, company.password_hash);
       if (!match) return res.status(401).json({ message: 'Invalid credentials' });
       const token = generateToken({ role: 'CompanyAdmin', companyId: company.id });
-      res.json({ message: 'Login successful', token, company: { id: company.id, company_name: company.company_name, role: 'CompanyAdmin' } });
+      res.json({ 
+        message: 'Login successful', 
+        token, 
+        company: { 
+          id: company.id, 
+          company_name: company.company_name, 
+          company_logo: company.company_logo,
+          category: company.category,
+          role: 'CompanyAdmin' 
+        } 
+      });
     }
   );
 });
