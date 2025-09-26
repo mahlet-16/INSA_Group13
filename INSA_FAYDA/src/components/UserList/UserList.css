@@ -1,0 +1,208 @@
+/* User List Container */
+.user-list-container {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  overflow-x: auto;
+}
+
+/* User List Form Layout */
+.user-list-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 1200px;
+}
+
+.user-list-form h3 {
+  color: #1f2937;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.user-list-item {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 2rem;
+  align-items: start;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  margin-bottom: 1rem;
+  max-width: 1200px;
+  overflow: hidden;
+}
+
+.user-list-item .logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  background: #f9fafb;
+  border: 2px solid #e5e7eb;
+  border-radius: 0.75rem;
+  min-height: 200px;
+  justify-content: center;
+}
+
+.user-list-item .logo-section img {
+  max-width: 180px;
+  max-height: 180px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-item .form-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 1rem;
+  max-width: 800px;
+}
+
+.user-list-item .form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.user-list-item .form-row label {
+  font-weight: 600;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.user-list-item .form-row input,
+.user-list-item .form-row select {
+  padding: 0.75rem;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: white;
+  max-width: 100%;
+}
+
+.user-list-item .form-row input:focus,
+.user-list-item .form-row select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Action Buttons */
+.user-list-item .form-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.user-list-item button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  white-space: nowrap;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-list-item button.edit-btn {
+  background: #3b82f6;
+  color: white;
+}
+
+.user-list-item button.edit-btn:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.user-list-item button.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.user-list-item button.delete-btn:hover {
+  background: #dc2626;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.user-list-item button.save-btn {
+  background: #10b981;
+  color: white;
+}
+
+.user-list-item button.save-btn:hover {
+  background: #059669;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.user-list-item button.cancel-btn {
+  background: #6b7280;
+  color: white;
+}
+
+.user-list-item button.cancel-btn:hover {
+  background: #4b5563;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .user-list-item {
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+  }
+  
+  .user-list-item .form-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .user-list-item .logo-section img {
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  .user-list-item {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+  
+  .user-list-item .form-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .user-list-item .logo-section {
+    justify-self: center;
+    min-height: 150px;
+  }
+  
+  .user-list-item .logo-section img {
+    max-width: 120px;
+    max-height: 120px;
+  }
+  
+  .user-list-item .form-row {
+    padding: 0.25rem;
+  }
+  
+  .user-list-item .form-row input,
+  .user-list-item .form-row select {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}

@@ -1,0 +1,108 @@
+.contact-section {
+  background: url("../../Assets/images/contact.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.contact-con {
+  background: rgba(4, 93, 137, 0.735);
+  padding-left: 5%;
+  color: white;
+}
+
+.contact {
+  display: flex;
+  justify-content: start;
+}
+
+.contact-title {
+  text-align: start;
+  font-size: 4em;
+  font-weight: bold;
+  text-align: start;
+  color: rgb(43, 225, 177);
+  max-width: 450px;
+  padding-top: 1rem;
+  margin-block-end: 0;
+}
+
+.social-icons-container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.social-icons {
+  font-size: 2em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 10px;
+  margin-left: 30px;
+  color: white;
+}
+
+.contact-description {
+  flex: 1;
+  max-width: 350px;
+  font-size: 1.7em;
+  line-height: 1.2;
+  color: white;
+}
+
+.contact-form {
+  display: flex;
+  gap: 1rem;
+}
+
+.form-input {
+  width: 250px;
+  padding: 10px 15px;
+  border-radius: none;
+  font-size: 1em;
+}
+
+.form-textarea {
+  padding: 12px 15px;
+  border-radius: none;
+  font-size: 1em;
+  width: 550px;
+  height: 80px;
+}
+
+.contact-inf {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.link-container,
+.email-icon,
+.phone-icon {
+  margin-right: 20px;
+  font-size: 1.2em;
+}
+
+.link-special {
+  margin-top: 1.5rem;
+}
+
+.special-link {
+  color: rgb(43, 225, 177);
+}
+
+.special-link:hover {
+  color: white;
+}
+
+.link-container a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0 0.8rem;
+}
+
+.link-container a:hover {
+  color: rgb(43, 225, 177);
+}
