@@ -1,0 +1,113 @@
+.how-it-works {
+  background: url("../../Assets/images/how-it-work.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.how-work-container {
+  background: rgba(4, 93, 137, 0.3);
+  height: 100vh;
+}
+
+.how-work-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 3.5rem 1rem 0;
+  margin-left: 100px;
+  text-align: start;
+  color: white;
+}
+
+.how-work-steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.how-work-button {
+  animation: bounce 2s infinite;
+  background-color: white;
+  border: none;
+  border-radius: 100px;
+  color: black;
+  cursor: pointer;
+  font-size: 1em;
+  padding: 15px 20px;
+  width: 250px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.how-work-button:hover {
+  background-color: #00c6c6;
+  color: white;
+}
+
+.vertical-hr {
+  width: 5px; /* thickness */
+  height: 70vh; /* height */
+  background-color: white;
+  border: none;
+  margin: 0 30px; /* spacing */
+  align-content: center;
+}
+
+.how-work-icon {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-evenly;
+  margin: 40px 12px;
+}
+.icon-left,
+.icon-right {
+  color: #00c6c6;
+  font-size: 2.5em;
+  align-items: center;
+}
+
+.icon-right {
+  padding-left: 15px;
+}
+.icon-left {
+  padding-right: 15px;
+}
+
+/* 📱 Mobile view */
+@media (max-width: 768px) {
+  .how-it-works {
+    height: auto;
+  }
+
+  .how-work-title {
+    font-size: 1.8em;
+    margin-left: 50px;
+  }
+
+  .how-work-button {
+    font-size: 0.85em;
+    padding: 10px 15px;
+    width: 200px;
+  }
+
+  .icon-left,
+  .icon-right {
+    font-size: 2em;
+  }
+
+  .vertical-hr {
+    height: 50vh;
+    width: 3px;
+  }
+}

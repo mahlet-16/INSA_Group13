@@ -1,0 +1,83 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.contact-content {
+  margin: 5%;
+}
+
+.heading {
+  color: #184d63;
+  background-color: #b5b2b2d5;
+  margin-top: 0;
+  padding: 2% 3%;
+}
+
+.contact-table1,
+.contact-table2 {
+  background-color: aliceblue;
+  margin-bottom: 5%;
+  border-radius: 20px;
+}
+.row {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+}
+
+.col {
+  padding: 2% 3%;
+}
+
+.contact-form1 {
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  border-radius: 10px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 0 4%;
+}
+.get-heading {
+  color: #184d63;
+  font-size: 2rem;
+  margin-block-end: 0;
+  padding: 0 3%;
+}
+
+.get-desc {
+  padding-left: 4%;
+  color: #184d63;
+}
+
+.form-label {
+  color: #184d63;
+  margin: 0.5rem 0;
+}
+
+.form-in {
+  border: 0 solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: aliceblue;
+}
+
+.btn {
+  background-color: rgb(43, 225, 177);
+  color: white;
+  padding: 0.5rem 1rem;
+  margin: 3% 5%;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,23 @@
+.contact-header {
+  background: url("../../Assets/images/contact-header.jpg") no-repeat center
+    center;
+  background-size: 100% 100%;
+  width: 100%;
+  margin: 0;
+}
+
+.contact-overlay {
+  background: rgba(4, 93, 137, 0.7);
+  padding: 5%;
+}
+
+.highlight {
+  color: rgb(43, 225, 177);
+}
+
+.contact-header-title {
+  font-size: 4.5rem;
+  font-weight: bold;
+  color: white;
+  max-width: 450px;
+}

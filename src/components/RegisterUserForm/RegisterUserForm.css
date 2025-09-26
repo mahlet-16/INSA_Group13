@@ -1,0 +1,128 @@
+.register-user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 1rem auto;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  align-items: stretch;
+}
+
+.register-user-form h3 {
+  color: #1f2937;
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.register-user-form-fields {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.register-user-form input, 
+.register-user-form select {
+  padding: 0.75rem;
+  border: 2px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  background: white;
+  transition: all 0.2s;
+}
+
+.register-user-form input:focus,
+.register-user-form select:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.register-user-form input[type="file"] {
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 0.9rem;
+  background: white;
+  cursor: pointer;
+  max-width: 200px;
+}
+
+.register-user-form button {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 150px;
+  margin: 1rem auto;
+  display: block;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.register-user-form button:hover {
+  background: #2563eb;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.register-user-form button:disabled {
+  background: #6b7280;
+  color: #9ca3af;
+  transform: none;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.register-message {
+  color: #10b981;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 1rem;
+  width: 100%;
+  padding: 1rem;
+  background: #d1fae5;
+  border: 1px solid #a7f3d0;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+@media (max-width: 1024px) {
+  .register-user-form-fields {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .register-user-form {
+    padding: 1rem;
+    margin: 0.5rem auto;
+  }
+  
+  .register-user-form-fields {
+    grid-template-columns: 1fr;
+  }
+  
+  .register-user-form input,
+  .register-user-form select {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+  
+  .register-user-form button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}

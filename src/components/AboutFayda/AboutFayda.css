@@ -1,0 +1,58 @@
+.about-section {
+  background: url("../../Assets/images/about-fayda.jpg");
+  background-repeat: no-repeat;
+  background-position: right top; /* align to left */
+  background-size: 70% auto;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  margin: 0;
+  position: relative;
+  opacity: 0.8;
+}
+
+/* Hero Content */
+
+.about-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.about-description {
+  flex: 1;
+  max-width: 600px;
+  color: rgb(35, 93, 113);
+  font-size: 1.7em;
+  line-height: 1.2;
+  padding: 30px;
+  text-align: justify;
+}
+
+.about-subtitle {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    background: url("../../Assets/images/about-fayda.jpg");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 70% auto;
+  }
+
+  .about-title {
+    font-size: 2em;
+  }
+
+  .about-description {
+    font-size: 1.5em;
+    padding: 0 12%;
+  }
+
+  .about-subtitle {
+    font-size: 1.2em;
+  }
+}
