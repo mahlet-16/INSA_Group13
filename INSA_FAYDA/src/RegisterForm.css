@@ -1,0 +1,327 @@
+.register-page {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('./Assets/eth_fayda (2).jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background: rgba(30, 30, 30, 0.85);
+  padding: 2.5rem;
+  border-radius: 12px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.register-title {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 1rem 0;
+  letter-spacing: 0.5px;
+}
+
+.register-form-fields {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  width: 100%;
+}
+
+.register-file {
+  grid-column: span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.register-file input[type="file"] {
+  padding: 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  background: rgba(40, 40, 40, 0.9);
+  color: #fff;
+}
+
+.register-form input, .register-form select {
+  padding: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 100%;
+  background: rgba(40, 40, 40, 0.9);
+  color: #fff;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.register-form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.register-form select {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.register-form select option {
+  background: rgba(40, 40, 40, 0.9);
+  color: #fff;
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  outline: none;
+  border-color: #2A9FD8;
+  background: rgba(45, 45, 45, 0.95);
+  box-shadow: 0 0 0 3px rgba(42, 159, 216, 0.1);
+}
+
+.register-form input.error {
+  border-color: #ff6b6b;
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+
+.input-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.validation-error {
+  color: #ff6b6b;
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin-top: -0.2rem;
+  padding-left: 0.5rem;
+}
+
+.checking-indicator {
+  color: #2A9FD8;
+  font-size: 0.8rem;
+  font-style: italic;
+  margin-top: -0.2rem;
+  padding-left: 0.5rem;
+}
+
+.register-form button {
+  background: #2A9FD8;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+.register-form button:hover {
+  background: #1e8bc3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(42, 159, 216, 0.3);
+}
+
+.register-form button:disabled {
+  background: rgba(42, 159, 216, 0.4);
+  color: rgba(255, 255, 255, 0.6);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.register-message {
+  color: #2A9FD8;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.register-message-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.register-login-link {
+  text-align: center;
+  margin-top: 1rem;
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.register-login-text {
+  color: #2A9FD8;
+  cursor: pointer;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.register-login-text:hover {
+  color: #1e8bc3;
+}
+
+@media (max-width: 768px) {
+  .register-page { 
+    padding: 1rem; 
+  }
+  .register-form { 
+    padding: 2rem; 
+    max-width: 95vw; 
+  }
+  .register-form-fields {
+    grid-template-columns: 1fr;
+  }
+  .register-title {
+    font-size: 1.6rem;
+  }
+}
+
+/* Login Modal Styles */
+.register-login-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}
+
+.register-login-modal {
+  background: rgba(30, 30, 30, 0.95);
+  padding: 2.5rem;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(15px);
+}
+
+.register-login-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 1.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.register-login-close:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.register-login-modal h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 0 1.5rem 0;
+  letter-spacing: 0.5px;
+}
+
+.register-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.register-login-form input {
+  padding: 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(40, 40, 40, 0.9);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.register-login-form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.register-login-form input:focus {
+  outline: none;
+  border-color: #2A9FD8;
+  background: rgba(45, 45, 45, 0.95);
+  box-shadow: 0 0 0 3px rgba(42, 159, 216, 0.1);
+}
+
+.register-login-form button {
+  background: #2A9FD8;
+  color: #fff;
+  border: none;
+  padding: 0.9rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+}
+
+.register-login-form button:hover:not(:disabled) {
+  background: #1e8bc3;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(42, 159, 216, 0.3);
+}
+
+.register-login-form button:disabled {
+  background: rgba(42, 159, 216, 0.4);
+  color: rgba(255, 255, 255, 0.6);
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.register-login-message {
+  color: #2A9FD8;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  border-radius: 6px;
+  background: rgba(42, 159, 216, 0.1);
+}
+
+@media (max-width: 768px) {
+  .register-login-modal {
+    padding: 2rem;
+    width: 95%;
+  }
+  
+  .register-login-modal h3 {
+    font-size: 1.3rem;
+  }
+}
