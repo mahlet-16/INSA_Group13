@@ -1,5 +1,5 @@
 .service-header {
-  background: url("../../Assets/images/post-machine.jpg");
+  background: url("../../Assets/images/service.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: cover;
@@ -10,13 +10,9 @@
 }
 
 .overlay {
-  background: rgba(4, 93, 137, 0.3);
+  background: rgba(4, 15, 137, 0.5);
   height: 100%;
   padding: 10%;
-}
-
-.highlight {
-  color: rgb(43, 225, 177);
 }
 
 .service-header-title {

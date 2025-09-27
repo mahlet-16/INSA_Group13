@@ -8,6 +8,11 @@
   color: white;
 }
 
+.over {
+  background: rgba(4, 15, 137, 0.5);
+  height: 100%;
+}
+
 .offer-title {
   font-size: 4.5em;
   line-height: 1.5;
