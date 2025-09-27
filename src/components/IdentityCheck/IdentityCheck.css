@@ -34,12 +34,12 @@
 
 .identity-check-form input:focus {
   outline: none;
-  border-color: #3b82f6;
+  border-color: rgb(4, 15, 137);
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
 .identity-check-form button {
-  background: #3b82f6;
+  background: rgb(4, 15, 137);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -52,7 +52,7 @@
 }
 
 .identity-check-form button:hover {
-  background: #2563eb;
+  background: rgb(4, 15, 137);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -91,7 +91,7 @@
 }
 
 .identity-photo img {
-  border: 3px solid #3b82f6;
+  border: 3px solid #3711c0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -133,7 +133,7 @@
   font-size: 1.1rem;
   font-weight: 600;
   padding-bottom: 0.5rem;
-  border-bottom: 2px solid #3b82f6;
+  border-bottom: 2px solid #5b1ab1;
 }
 
 .identity-section > div {
@@ -164,7 +164,7 @@
 
 .identity-success {
   grid-column: 1 / -1;
-  color: #059669;
+  color: #c033d5;
   font-weight: 600;
   margin-top: 1rem;
   text-align: center;
@@ -176,7 +176,7 @@
 }
 
 .identity-success strong {
-  color: #047857;
+  color: #e52ba1;
 }
 
 .user-category {
@@ -187,7 +187,7 @@
 }
 
 .user-category strong {
-  background: #10b981;
+  background: #e81be1;
   color: white;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
@@ -239,31 +239,31 @@
     padding: 1rem;
     margin: 0.5rem auto;
   }
-  
+
   .identity-header {
     flex-direction: column;
     text-align: center;
     gap: 1rem;
   }
-  
+
   .identity-details {
     grid-template-columns: 1fr;
   }
-  
+
   .identity-check-form input {
     font-size: 0.9rem;
     padding: 0.6rem;
   }
-  
+
   .identity-check-form button {
     padding: 0.6rem 1.2rem;
     font-size: 0.9rem;
   }
-  
+
   .identity-result {
     padding: 1rem;
   }
-  
+
   .identity-section {
     padding: 1rem;
   }

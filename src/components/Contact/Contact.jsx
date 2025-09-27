@@ -77,7 +77,7 @@ function Contact() {
             placeholder="Your Comments"
           ></textarea>
           <button type="submit" className="submit-message">
-            Send Message
+            Submit
           </button>
         </div>
         <div className="contact-inf">

@@ -87,7 +87,7 @@
 }
 
 .register-form input.error {
-  border-color: #ff6b6b;
+  border-color: #b40cd2;
   box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
 }
 
@@ -115,7 +115,7 @@
 }
 
 .register-form button {
-  background: #2a9fd8;
+  background: #f514e6;
   color: #fff;
   border: none;
   padding: 0.9rem;
@@ -129,13 +129,13 @@
 }
 
 .register-form button:hover {
-  background: #1e8bc3;
+  background: #761ec3;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(42, 159, 216, 0.3);
+  box-shadow: 0 4px 12px rgba(175, 42, 216, 0.3);
 }
 
 .register-form button:disabled {
-  background: rgba(42, 159, 216, 0.4);
+  background: rgba(83, 42, 216, 0.4);
   color: rgba(255, 255, 255, 0.6);
   cursor: not-allowed;
   transform: none;
@@ -143,7 +143,7 @@
 }
 
 .register-message {
-  color: #2a9fd8;
+  color: #db12d1;
   font-weight: bold;
   text-align: center;
   margin-top: 0.5rem;
