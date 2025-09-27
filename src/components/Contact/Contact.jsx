@@ -70,12 +70,15 @@ function Contact() {
             </div>
           </form>
         </div>
-        <div>
+        <div className="message-send">
           <p>Comments</p>
           <textarea
             className="form-textarea"
             placeholder="Your Comments"
           ></textarea>
+          <button type="submit" className="submit-message">
+            Send Message
+          </button>
         </div>
         <div className="contact-inf">
           <p>Address: Addis Ababa - INSA</p>
