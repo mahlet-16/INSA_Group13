@@ -1,12 +1,12 @@
 .how-it-works {
-  background: url("../../Assets/images/how-it-work.jpg") no-repeat center center;
+  background: url("../../Assets/images/how_work.jpg") no-repeat center center;
   background-size: cover;
   width: 100%;
   height: 100vh;
 }
 
 .how-work-container {
-  background: rgba(4, 93, 137, 0.3);
+  background: rgba(4, 15, 137, 0.5);
   height: 100vh;
 }
 
@@ -51,7 +51,7 @@
 }
 
 .how-work-button:hover {
-  background-color: #00c6c6;
+  background-color: rgb(225, 43, 216);
   color: white;
 }
 
@@ -72,7 +72,7 @@
 }
 .icon-left,
 .icon-right {
-  color: #00c6c6;
+  color: rgb(225, 43, 216);
   font-size: 2.5em;
   align-items: center;
 }
