@@ -33,6 +33,12 @@
   background: rgba(255, 255, 255, 0.5);
   margin-right: 5%;
   height: 35vh;
-  width: 15%;
+  width: 18vw;
   border-radius: 10px;
+  color: rgb(225, 43, 216);
+  padding: 2%;
+  font-weight: bold;
+  font-size: 200%;
+  align-items: center;
+  align-content: center;
 }

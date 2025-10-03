@@ -9,10 +9,10 @@ const ServiceHeader = () => {
           FaydaPass ID <span className="highlight">Services</span>
         </h1>
         <div className="box-container">
-          <div className="bg-box"></div>
-          <div className="bg-box"></div>
-          <div className="bg-box"></div>
-          <div className="bg-box"></div>
+          <div className="bg-box">Digital Identity Verification</div>
+          <div className="bg-box">Government Services</div>
+          <div className="bg-box">Banking & Financial Services</div>
+          <div className="bg-box">Healthcare Integration</div>
         </div>
       </div>
     </section>
