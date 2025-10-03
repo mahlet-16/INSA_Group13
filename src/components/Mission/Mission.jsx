@@ -14,27 +14,33 @@ const Mission = () => {
             <FontAwesomeIcon icon={faBullseye} className="mission-icon" />
             <h3>Mission</h3>
             <p>
-              To deliver fast, secure, and reliable identity verification
-              solutions that empower Ethiopian institutions to protect their
-              people, data, and resources with confidence.
+              To provide a seamless, secure, and reliable digital identity
+              integration platform that connects the Ethiopian National ID with
+              institutions, enabling faster services, stronger security, and
+              improved access for citizens.
             </p>
           </div>
           <div className="mission-description">
             <FontAwesomeIcon icon={faEye} className="mission-icon" />
             <h3>Vision</h3>
             <p>
-              To deliver fast, secure, and reliable identity verification
-              solutions that empower Ethiopian institutions to protect their
-              people, data, and resources with confidence.
+              To be Ethiopia’s leading digital identity ecosystem, creating a
+              trusted foundation where every person can securely access
+              government, financial, health, and educational services through
+              one unified national ID.
             </p>
           </div>
           <div className="mission-description">
             <FontAwesomeIcon icon={faGem} className="mission-icon" />
             <h3>Values</h3>
             <p>
-              To deliver fast, secure, and reliable identity verification
-              solutions that empower Ethiopian institutions to protect their
-              people, data, and resources with confidence.
+              <ul>
+                <li>Security & Trust </li>
+                <li>Innovation </li>
+                <li>Inclusivity </li>
+                <li>Reliability </li>
+                <li>Collaboration</li>
+              </ul>
             </p>
           </div>
         </div>

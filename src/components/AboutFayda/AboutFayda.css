@@ -1,8 +1,8 @@
 .about-section {
-  background: url("../../Assets/images/about-fayda.jpg");
+  background: url("../../Assets/images/about-fayda.png");
   background-repeat: no-repeat;
-  background-position: right top; /* align to left */
-  background-size: 70% auto;
+  background-position: right; /* align to left */
+  background-size: 50% auto;
   width: 100%;
   height: 100vh;
   z-index: -1;
@@ -37,10 +37,10 @@
 
 @media (max-width: 768px) {
   .about-section {
-    background: url("../../Assets/images/about-fayda.jpg");
+    background: url("../../Assets/images/about-fayda.png");
     background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size: 70% auto;
+    background-position: bottom;
+    background-size: 75% 40%;
   }
 
   .about-title {

@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../Assets/images/logo_only.png"; // Update the path as necessary
+import logo from "../../Assets/images/fayda-logo1.png"; // Update the path as necessary
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./Navbar.css"; // Move your navbar styles here
 

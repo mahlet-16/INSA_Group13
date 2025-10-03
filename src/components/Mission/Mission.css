@@ -46,19 +46,22 @@
   font-size: 1.2em;
 }
 
+.mission-description p ul {
+  padding: 0 25px;
+  color: slategray;
+  font-size: 1.2em;
+  text-align: left;
+}
+
 @media (max-width: 768px) {
   .mission {
-    background: url("../../Assets/images/image.png") no-repeat center center;
+    background: url("../../Assets/images/service_3.png") no-repeat center center;
     background-size: cover;
     height: auto;
   }
 
   .mission-title {
     color: black;
-  }
-
-  .mission-description {
-    max-width: 90%;
   }
 
   .mission-content {
@@ -69,7 +72,7 @@
   .mission-description {
     margin-right: 0;
     margin-bottom: 20px;
-    max-width: 60%;
+    width: 80%;
   }
 
   .mission-icon {
