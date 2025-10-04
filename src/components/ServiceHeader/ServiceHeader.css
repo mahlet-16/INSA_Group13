@@ -42,3 +42,10 @@
   align-items: center;
   align-content: center;
 }
+
+@media (max-width: 768px) {
+  .bg-box {
+    font-size: 120%;
+    height: 20vh;
+  }
+}

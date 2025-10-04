@@ -71,10 +71,15 @@
   height: 80px;
 }
 
-.contact-inf {
+.address {
   display: flex;
   justify-content: space-between;
+}
+
+.contact-inf {
+  display: flex;
   color: white;
+  gap: 2rem;
 }
 
 .link-container,
@@ -93,7 +98,7 @@
   background-color: rgb(225, 43, 216);
   color: white;
   font-size: 1.5rem;
-  width: 550px;
+  width: 580px;
   padding: 0.6rem;
   margin: 3% 0;
   border: none;
@@ -121,5 +126,33 @@
 }
 
 .link-container a:hover {
-  color: rgb(43, 225, 177);
+  color: rgb(225, 43, 216);
+}
+
+@media (max-width: 768px) {
+  .contact-form,
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .social-icons {
+    font-size: 2em;
+    margin-left: 0;
+  }
+
+  .social-icons-container {
+    background: rgba(125, 10, 219, 0.8);
+    margin-right: 4rem;
+    justify-content: space-evenly;
+  }
+
+  .form-textarea,
+  .submit-message {
+    width: 250px;
+  }
+
+  .address {
+    flex-direction: column;
+  }
 }

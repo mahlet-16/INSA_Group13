@@ -80,27 +80,29 @@ function Contact() {
             Submit
           </button>
         </div>
-        <div className="contact-inf">
-          <p>Address: Addis Ababa - INSA</p>
-          <div>
-            <p>
-              <FaEnvelope className="email-icon" />
-              info@example.com
-            </p>
-            <p>
-              <FaPhone className="phone-icon" />
-              +1234567890
-            </p>
-          </div>
-          <div className="link-special">
-            <a className="special-link" href="http://example.com">
-              Link
-            </a>
+        <div className="address">
+          <div className="contact-inf">
+            <p>Address: INSA, Addis Ababa, Ethiopia</p>
+            <div>
+              <p>
+                <FaEnvelope className="email-icon" />
+                info@example.com
+              </p>
+              <p>
+                <FaPhone className="phone-icon" />
+                +1234567890
+              </p>
+            </div>
+            <div className="link-special">
+              <a className="special-link" href="http://example.com">
+                Link
+              </a>
+            </div>
           </div>
           <div className="link-container">
             <p>
               <a href="/services">Services</a>|<a href="/contact">Contact</a>|
-              <a href="/about">About Us</a>|
+              <a href="/about">About</a>|
               <i className="fa fa-copyright" aria-hidden="true">
                 Copy Right policy
               </i>

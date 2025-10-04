@@ -49,13 +49,13 @@
 
 .login-form input:focus {
   outline: none;
-  border-color: #2a9fd8;
+  border-color: rgb(107, 23, 234);
   background: rgba(45, 45, 45, 0.95);
   box-shadow: 0 0 0 3px rgba(42, 159, 216, 0.1);
 }
 
 .login-form button {
-  background: #2a9fd8;
+  background: rgb(234, 23, 224);
   color: #fff;
   border: none;
   padding: 0.9rem;
@@ -70,7 +70,7 @@
 }
 
 .login-form button:hover {
-  background: #1e8bc3;
+  background: rgb(107, 23, 234);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(42, 159, 216, 0.3);
 }
@@ -97,7 +97,7 @@
 }
 
 .login-forgot-link {
-  color: #fff;
+  color: rgb(229, 43, 43);
   text-decoration: none;
   cursor: pointer;
   font-size: 0.9rem;
@@ -106,7 +106,7 @@
 }
 
 .login-forgot-link:hover {
-  color: #2a9fd8;
+  color: rgb(225, 43, 229);
 }
 
 .signup-link {
@@ -118,14 +118,14 @@
 }
 
 .signup-text {
-  color: #2a9fd8;
+  color: rgb(234, 23, 224);
   cursor: pointer;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
 .signup-text:hover {
-  color: #1e8bc3;
+  color: rgb(107, 23, 234);
 }
 
 .login-modal-overlay {
@@ -185,7 +185,7 @@
 }
 
 .forgot-form button {
-  background: #2a9fd8;
+  background: rgb(234, 23, 224);
   color: #fff;
   border: none;
   padding: 0.8rem 1.5rem;
@@ -199,7 +199,7 @@
 }
 
 .forgot-form button:hover {
-  background: #1e8bc3;
+  background: rgb(107, 23, 234);
   transform: translateY(-1px);
 }
 
@@ -223,7 +223,7 @@
 
 .login-modal-close:hover {
   background: rgba(255, 255, 255, 0.2);
-  border-color: rgba(255, 255, 255, 0.3);
+  border-color: rgba(82, 26, 224, 0.948);
 }
 
 @media (max-width: 768px) {

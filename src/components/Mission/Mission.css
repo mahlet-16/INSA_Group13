@@ -53,15 +53,11 @@
   text-align: left;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .mission {
     background: url("../../Assets/images/service_3.png") no-repeat center center;
     background-size: cover;
     height: auto;
-  }
-
-  .mission-title {
-    color: black;
   }
 
   .mission-content {

@@ -111,3 +111,9 @@
     width: 3px;
   }
 }
+
+@media (max-width: 580px) {
+  .vertical-hr {
+    margin: 0;
+  }
+}

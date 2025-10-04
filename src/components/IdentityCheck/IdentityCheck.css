@@ -1,14 +1,13 @@
-.identity-check {
-  max-width: 1200px;
-  margin: 1rem auto;
-  background: #fff;
+.identity-check-horizontal {
+  margin: 2rem 4rem;
+  background: rgb(86, 4, 249);
   padding: 1.5rem;
   border-radius: 0.5rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(225, 43, 216, 0.1);
 }
 
-.identity-check h3 {
-  color: #1f2937;
+.identity-check-horizontal h3 {
+  color: rgb(225, 43, 216);
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 1rem;
@@ -19,8 +18,9 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 300px;
+  margin: 1.5rem auto;
+  padding-bottom: 2rem;
 }
 
 .identity-check-form input {
@@ -39,7 +39,7 @@
 }
 
 .identity-check-form button {
-  background: rgb(4, 15, 137);
+  background: rgb(225, 43, 216);
   color: white;
   border: none;
   padding: 0.75rem 1.5rem;
@@ -52,7 +52,7 @@
 }
 
 .identity-check-form button:hover {
-  background: rgb(4, 15, 137);
+  background: rgb(79, 4, 137);
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
@@ -66,7 +66,7 @@
 }
 
 .identity-result {
-  background: #f9fafb;
+  background: rgb(79, 4, 137);
   padding: 1.5rem;
   border-radius: 0.5rem;
   margin-top: 1.5rem;
@@ -95,22 +95,10 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.identity-basic-info h4 {
-  margin: 0 0 0.5rem 0;
-  color: #1f2937;
+.identity-basic-info {
+  color: rgb(255, 255, 255);
   font-size: 1.5rem;
-  font-weight: 700;
-}
-
-.identity-basic-info > div {
-  margin-bottom: 0.5rem;
-  color: #374151;
-  font-size: 1rem;
-}
-
-.identity-basic-info b {
-  color: #1f2937;
-  font-weight: 600;
+  font-weight: 500;
 }
 
 .identity-details {
@@ -120,7 +108,7 @@
 }
 
 .identity-section {
-  background: white;
+  background: rgb(255, 255, 255);
   padding: 1.25rem;
   border-radius: 0.5rem;
   border: 1px solid #e5e7eb;
@@ -217,29 +205,20 @@
   font-size: 1rem;
 }
 
-.identity-check-horizontal {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
+@media (max-width: 1200px) {
+  .identity-result {
+    max-width: 600px;
+  }
 
-@media (max-width: 1024px) {
   .identity-details {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
-  .identity-check {
-    padding: 1rem;
-    margin: 0.5rem auto;
+@media (max-width: 820px) {
+  .identity-result {
+    max-width: 500px;
   }
-
   .identity-header {
     flex-direction: column;
     text-align: center;
@@ -266,5 +245,17 @@
 
   .identity-section {
     padding: 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .identity-result {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 500px) {
+  .identity-result {
+    max-width: 250px;
   }
 }
