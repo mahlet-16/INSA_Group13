@@ -43,6 +43,10 @@
   color: white;
 }
 
+.social-icons:hover {
+  color: rgb(225, 43, 216);
+}
+
 .contact-description {
   flex: 1;
   max-width: 350px;
@@ -52,6 +56,11 @@
 }
 
 .contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.name-email {
   display: flex;
   gap: 1rem;
 }
@@ -130,7 +139,7 @@
 }
 
 @media (max-width: 768px) {
-  .contact-form,
+  .name-email,
   .contact {
     display: flex;
     flex-direction: column;
@@ -147,9 +156,12 @@
     justify-content: space-evenly;
   }
 
-  .form-textarea,
-  .submit-message {
+  .form-textarea {
     width: 250px;
+  }
+
+  .submit-message {
+    width: 280px;
   }
 
   .address {
