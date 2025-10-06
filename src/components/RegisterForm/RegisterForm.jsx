@@ -9,6 +9,7 @@ function RegisterForm() {
     username: "",
     phone: "",
     company_name: "",
+    address: "",
     gmail: "",
     password: "",
     confirmPassword: "",
@@ -129,6 +130,7 @@ function RegisterForm() {
           username: "",
           phone: "",
           company_name: "",
+          address: "",
           gmail: "",
           password: "",
           confirmPassword: "",
@@ -248,6 +250,14 @@ function RegisterForm() {
             name="company_name"
             placeholder="Company Name"
             value={form.company_name}
+            onChange={handleChange}
+            required
+          />
+
+          <input
+            name="address"
+            placeholder="Company Address"
+            value={form.address}
             onChange={handleChange}
             required
           />
