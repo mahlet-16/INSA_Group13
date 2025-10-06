@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import LoginForm from "../LoginForm/LoginForm";
 import "./RegisterForm.css";
 
 function RegisterForm() {
@@ -322,43 +323,20 @@ function RegisterForm() {
       {/* Login Modal */}
       {showLoginModal && (
         <div
-          className="register-login-modal-overlay"
+          className="header-login-modal-overlay"
           onClick={handleCloseLoginModal}
         >
           <div
-            className="register-login-modal"
+            className="header-login-modal"
             onClick={(e) => e.stopPropagation()}
           >
             <button
-              className="register-login-close"
+              className="header-login-close"
               onClick={handleCloseLoginModal}
             >
               ×
             </button>
-            <h3>Welcome Back</h3>
-            <form onSubmit={handleLoginSubmit} className="register-login-form">
-              <input
-                name="user"
-                placeholder="Email or Username"
-                value={loginForm.user}
-                onChange={handleLoginChange}
-                required
-              />
-              <input
-                type="password"
-                name="password"
-                placeholder="Password"
-                value={loginForm.password}
-                onChange={handleLoginChange}
-                required
-              />
-              <button type="submit" disabled={loginLoading}>
-                {loginLoading ? "Logging In..." : "Log In"}
-              </button>
-            </form>
-            {loginMessage && (
-              <div className="register-login-message">{loginMessage}</div>
-            )}
+            <LoginForm />
           </div>
         </div>
       )}
