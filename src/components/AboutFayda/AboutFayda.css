@@ -56,3 +56,25 @@
     font-size: 1.2em;
   }
 }
+
+@media (max-width: 426px) {
+  .about-section {
+    background: url("../../Assets/images/about-fayda.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+  }
+
+  .about-title {
+    font-size: 1.5em;
+  }
+
+  .about-description {
+    font-size: 1em;
+    padding: 0 6%;
+  }
+
+  .about-subtitle {
+    font-size: 0.8em;
+  }
+}

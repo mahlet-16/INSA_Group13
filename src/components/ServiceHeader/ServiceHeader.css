@@ -49,3 +49,10 @@
     height: 20vh;
   }
 }
+
+@media (max-width: 426px) {
+  .bg-box {
+    font-size: 60%;
+    height: 20vh;
+  }
+}
