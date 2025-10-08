@@ -48,6 +48,7 @@
 
 .register-button,
 .login-button {
+  animation: bounce 2s infinite;
   background-color: rgb(87, 34, 143);
   color: white;
   border: solid 1px;
