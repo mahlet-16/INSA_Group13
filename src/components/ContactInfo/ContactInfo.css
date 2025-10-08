@@ -8,7 +8,7 @@
 }
 
 .heading {
-  color: #184d63;
+  color: rgb(4, 15, 137);
   background-color: #b5b2b2d5;
   margin-top: 0;
   padding: 2% 3%;
@@ -42,7 +42,7 @@
   margin: 0 4%;
 }
 .get-heading {
-  color: #184d63;
+  color: rgb(4, 15, 137);
   font-size: 2rem;
   margin-block-end: 0;
   padding: 0 3%;
@@ -54,7 +54,7 @@
 }
 
 .form-label {
-  color: #184d63;
+  color: rgb(4, 15, 137);
   margin: 0.5rem 0;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .btn {
-  background-color: rgb(43, 225, 177);
+  background-color: rgb(225, 43, 216);
   color: white;
   padding: 0.5rem 1rem;
   margin: 3% 5%;

@@ -1,14 +1,23 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import handleRegisterClick from "../RegisterForm/RegisterForm";
+import RegisterForm from "../RegisterForm/RegisterForm";
 import "./LoginForm.css";
 
 function LoginForm() {
   const [form, setForm] = useState({ user: "", password: "" });
   const [message, setMessage] = useState("");
   const [loading, setLoading] = useState(false);
+  const [showRegisterModal, setShowRegisterModal] = useState(false);
   const navigate = useNavigate();
+
+  const handleRegisterClick = () => {
+    setShowRegisterModal(true);
+  };
+
+  const handleCloseRegisterModal = () => {
+    setShowRegisterModal(false);
+  };
 
   const handleChange = (e) =>
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -125,6 +134,26 @@ function LoginForm() {
           </div>
         </form>
       </div>
+
+      {showRegisterModal && (
+        <div
+          className="header-login-modal-overlay"
+          onClick={handleCloseRegisterModal}
+        >
+          <div
+            className="header-login-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              className="header-login-close"
+              onClick={handleCloseRegisterModal}
+            >
+              ×
+            </button>
+            <RegisterForm />
+          </div>
+        </div>
+      )}
 
       {showForgot && (
         <div

@@ -13,7 +13,7 @@ function OurService() {
         <div className="service-list">
           <div className="service-item">
             <FontAwesomeIcon icon={faCircleCheck} className="service-icon" />
-            <h1>Visitor Management</h1>
+            <h2>Visitor Management</h2>
             <p>
               Easily register and issue temporary passes for guests,
               contractors, and vendors while maintaining full control over their
@@ -23,7 +23,7 @@ function OurService() {
           </div>
           <div className="service-item">
             <FontAwesomeIcon icon={faCircleCheck} className="service-icon" />
-            <h1>Incident Alerts & Notifications</h1>
+            <h2>Incident Alerts & Notifications</h2>
             <p>
               Get real–time alerts via dashboard, email, or SMS for any
               unauthorized entry attempt or unusual activity, ensuring quick
@@ -33,7 +33,7 @@ function OurService() {
           </div>
           <div className="service-item">
             <FontAwesomeIcon icon={faCircleCheck} className="service-icon" />
-            <h1>Secure Data Integration</h1>
+            <h2>Secure Data Integration</h2>
             <p>
               Seamlessly connect with your existing HR, school, or facility
               management systems while keeping all personal and access data

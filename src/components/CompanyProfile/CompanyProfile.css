@@ -1,11 +1,11 @@
 /* Company Profile Container */
 .company-profile {
   padding: 1.5rem;
-  background: white;
+  background: rgb(86, 4, 249);
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-  max-width: 100%;
   overflow: hidden;
+  margin: 2rem 4rem;
 }
 
 /* Profile Layout - Logo on Left Side */
@@ -27,7 +27,7 @@
 
 .company-profile-view h3 {
   margin-bottom: 1rem;
-  color: #1f2937;
+  color: rgb(255, 255, 255);
   font-size: 1.75rem;
   font-weight: 600;
 }
@@ -38,8 +38,8 @@
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background: #f9fafb;
-  border: 2px solid #e5e7eb;
+  background: rgb(44, 4, 245);
+  border: 2px solid rgb(245, 4, 201);
   border-radius: 0.75rem;
   min-height: 250px;
   justify-content: center;
@@ -55,7 +55,7 @@
 
 .company-profile-view .logo-section button {
   padding: 0.75rem 1.5rem;
-  background: #3b82f6;
+  background: rgb(249, 4, 241);
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -111,7 +111,7 @@
 }
 
 .company-profile-edit h3 {
-  color: #1f2937;
+  color: rgb(255, 255, 255);
   font-size: 1.75rem;
   font-weight: 600;
   margin-bottom: 0.75rem;
@@ -123,8 +123,8 @@
   align-items: center;
   gap: 1rem;
   padding: 1.5rem;
-  background: #f9fafb;
-  border: 2px solid #e5e7eb;
+  background: rgb(19, 11, 247);
+  border: 2px solid rgb(249, 4, 241);
   border-radius: 0.75rem;
   min-height: 200px;
   justify-content: center;
@@ -166,7 +166,7 @@
 .company-profile-edit .form-row label {
   font-weight: 600;
   font-size: 1rem;
-  color: #374151;
+  color: rgb(255, 255, 255);
 }
 
 .company-profile-edit .form-row input {
@@ -179,8 +179,7 @@
 }
 
 .company-profile-edit .form-row input:focus {
-  outline: none;
-  border-color: #3b82f6;
+  border-color: rgb(249, 4, 241);
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
@@ -194,7 +193,6 @@
 }
 
 .company-profile-edit .form-row select:focus {
-  outline: none;
   border-color: #3b82f6;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
@@ -202,7 +200,7 @@
 /* Buttons */
 .company-profile button {
   padding: 0.75rem 1.5rem;
-  background: #3b82f6;
+  background: rgb(249, 4, 241);
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -221,7 +219,7 @@
 }
 
 .company-profile button[type="button"] {
-  background: #6b7280;
+  background: rgb(249, 4, 4);
 }
 
 .company-profile button[type="button"]:hover {
@@ -248,32 +246,32 @@
     grid-template-columns: 200px 1fr;
     gap: 1.5rem;
   }
-  
+
   .company-profile-edit .form-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .profile-layout {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
   }
-  
+
   .company-profile-view .info-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .company-profile-edit .form-grid {
     grid-template-columns: 1fr;
   }
-  
+
   .company-profile-view .logo-section,
   .company-profile-edit .logo-section {
     justify-self: center;
     min-height: 150px;
   }
-  
+
   .company-profile-view .logo-section img,
   .company-profile-edit .logo-section img {
     max-width: 120px;

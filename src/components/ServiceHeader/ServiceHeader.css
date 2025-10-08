@@ -1,5 +1,5 @@
 .service-header {
-  background: url("../../Assets/images/post-machine.jpg");
+  background: url("../../Assets/images/service.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: cover;
@@ -10,13 +10,9 @@
 }
 
 .overlay {
-  background: rgba(4, 93, 137, 0.3);
+  background: rgba(4, 15, 137, 0.5);
   height: 100%;
   padding: 10%;
-}
-
-.highlight {
-  color: rgb(43, 225, 177);
 }
 
 .service-header-title {
@@ -37,6 +33,26 @@
   background: rgba(255, 255, 255, 0.5);
   margin-right: 5%;
   height: 35vh;
-  width: 15%;
+  width: 18vw;
   border-radius: 10px;
+  color: rgb(225, 43, 216);
+  padding: 2%;
+  font-weight: bold;
+  font-size: 200%;
+  align-items: center;
+  align-content: center;
+}
+
+@media (max-width: 768px) {
+  .bg-box {
+    font-size: 120%;
+    height: 20vh;
+  }
+}
+
+@media (max-width: 426px) {
+  .bg-box {
+    font-size: 60%;
+    height: 20vh;
+  }
 }

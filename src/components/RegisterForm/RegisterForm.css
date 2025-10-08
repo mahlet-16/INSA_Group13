@@ -12,7 +12,7 @@
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
-  background: rgba(30, 30, 30, 0.85);
+  background: rgba(100, 7, 240, 0.85);
   padding: 2.5rem;
   border-radius: 12px;
   backdrop-filter: blur(15px);
@@ -81,13 +81,13 @@
 .register-form input:focus,
 .register-form select:focus {
   outline: none;
-  border-color: #2a9fd8;
+  border-color: rgb(234, 23, 224);
   background: rgba(45, 45, 45, 0.95);
   box-shadow: 0 0 0 3px rgba(42, 159, 216, 0.1);
 }
 
 .register-form input.error {
-  border-color: #ff6b6b;
+  border-color: #b40cd2;
   box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
 }
 
@@ -107,7 +107,7 @@
 }
 
 .checking-indicator {
-  color: #2a9fd8;
+  color: rgb(234, 23, 224);
   font-size: 0.8rem;
   font-style: italic;
   margin-top: -0.2rem;
@@ -115,7 +115,7 @@
 }
 
 .register-form button {
-  background: #2a9fd8;
+  background: rgb(245, 20, 230);
   color: #fff;
   border: none;
   padding: 0.9rem;
@@ -129,13 +129,13 @@
 }
 
 .register-form button:hover {
-  background: #1e8bc3;
+  background: rgb(244, 5, 180);
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(42, 159, 216, 0.3);
+  box-shadow: 0 4px 12px rgba(175, 42, 216, 0.3);
 }
 
 .register-form button:disabled {
-  background: rgba(42, 159, 216, 0.4);
+  background: rgba(83, 42, 216, 0.4);
   color: rgba(255, 255, 255, 0.6);
   cursor: not-allowed;
   transform: none;
@@ -143,7 +143,7 @@
 }
 
 .register-message {
-  color: #2a9fd8;
+  color: #db12d1;
   font-weight: bold;
   text-align: center;
   margin-top: 0.5rem;
@@ -165,14 +165,14 @@
 }
 
 .register-login-text {
-  color: #2a9fd8;
+  color: rgb(247, 6, 179);
   cursor: pointer;
   font-weight: 600;
   transition: color 0.3s ease;
 }
 
 .register-login-text:hover {
-  color: #1e8bc3;
+  color: rgb(245, 197, 226);
 }
 
 @media (max-width: 768px) {
@@ -207,7 +207,7 @@
 }
 
 .register-login-modal {
-  background: rgba(30, 30, 30, 0.95);
+  background: rgba(100, 7, 240, 0.85);
   padding: 2.5rem;
   border-radius: 12px;
   width: 90%;
@@ -268,13 +268,13 @@
 
 .register-login-form input:focus {
   outline: none;
-  border-color: #2a9fd8;
+  border-color: rgb(234, 23, 224);
   background: rgba(45, 45, 45, 0.95);
   box-shadow: 0 0 0 3px rgba(42, 159, 216, 0.1);
 }
 
 .register-login-form button {
-  background: #2a9fd8;
+  background: rgb(234, 23, 224);
   color: #fff;
   border: none;
   padding: 0.9rem;
@@ -287,13 +287,13 @@
 }
 
 .register-login-form button:hover:not(:disabled) {
-  background: #1e8bc3;
+  background: rgb(249, 3, 167);
   transform: translateY(-1px);
   box-shadow: 0 4px 12px rgba(42, 159, 216, 0.3);
 }
 
 .register-login-form button:disabled {
-  background: rgba(42, 159, 216, 0.4);
+  background: rgba(143, 42, 216, 0.4);
   color: rgba(255, 255, 255, 0.6);
   cursor: not-allowed;
   transform: none;
@@ -301,7 +301,7 @@
 }
 
 .register-login-message {
-  color: #2a9fd8;
+  color: rgb(234, 23, 224);
   font-weight: bold;
   text-align: center;
   margin-top: 1rem;

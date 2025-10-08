@@ -125,7 +125,7 @@ function Dashboard() {
           </button>
         ))}
       </div>
-      <div className="dashboard-content">
+      <div className="">
         {tab === "register" && (
           <RegisterUserForm onUserAdded={handleUserAdded} />
         )}

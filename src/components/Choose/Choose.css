@@ -17,7 +17,7 @@
 }
 
 .chosen {
-  background-color: rgb(8, 163, 174);
+  background-color: rgb(5, 31, 100);
   color: white;
 }
 
@@ -33,7 +33,7 @@
   font-size: 1.5em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .choose-container {
     flex-direction: column;
     align-items: center;

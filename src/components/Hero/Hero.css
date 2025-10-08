@@ -1,14 +1,13 @@
 /* Hero Section */
 .hero {
-  background: url("../../Assets/images/dr_abeyahmed.jpg") no-repeat center
-    center;
+  background: url("../../Assets/images/hero.png") no-repeat center center;
   background-size: cover;
   width: 100%;
 }
 
 /* Hero Content */
 .hero-content {
-  background: rgba(4, 93, 137, 0.3);
+  background: rgba(4, 15, 137, 0.3);
   position: relative;
   color: white;
   height: 100%;
@@ -41,10 +40,6 @@
   color: white;
 }
 
-.highlight {
-  color: rgb(43, 225, 177);
-}
-
 .hero-buttons {
   display: flex;
   gap: 10%;
@@ -53,10 +48,11 @@
 
 .register-button,
 .login-button {
-  background-color: rgb(40, 135, 166);
+  animation: bounce 2s infinite;
+  background-color: rgb(87, 34, 143);
   color: white;
   border: solid 1px;
-  border-color: rgb(43, 225, 177);
+  border-color: rgb(225, 43, 216);
   padding: 15px 30px;
   font-size: 1.2em;
   cursor: pointer;
@@ -66,7 +62,7 @@
 
 .register-button:hover,
 .login-button:hover {
-  background-color: rgb(43, 225, 177);
+  background-color: rgb(225, 43, 216);
 }
 
 /* ---------------- MODAL STYLES ---------------- */

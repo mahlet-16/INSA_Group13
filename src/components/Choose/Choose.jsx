@@ -15,26 +15,24 @@ const Choose = () => {
           <FontAwesomeIcon icon={faLock} className="mission-icon" />
           <h3>Secure by Design</h3>
           <p>
-            Our platform is built with security as a top priority, utilizing
-            advanced encryption and authentication methods to protect user data
-            and privacy.
+            We prioritize data protection with advanced encryption and
+            authentication to keep user information safe.
           </p>
         </div>
         <div className="chosen">
           <FontAwesomeIcon icon={faFingerprint} className="mission-icon" />
           <h3>Instant Verification</h3>
           <p>
-            Our platform integrates seamlessly with the official National ID,
-            ensuring real-time, accurate verification for all users.
+            Seamless National ID integration provides real-time, accurate
+            identity verification for all users.
           </p>
         </div>
         <div className="chosen">
           <FontAwesomeIcon icon={faCogs} className="mission-icon" />
           <h3>Effortless Management</h3>
           <p>
-            Our platform simplifies user management with intuitive tools and
-            dashboards, making it easy for administrators to oversee and manage
-            identities.
+            Simplified dashboards and tools make user management easy,
+            efficient, and reliable for administrators.
           </p>
         </div>
       </div>
