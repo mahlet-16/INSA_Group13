@@ -1,0 +1,21 @@
+{
+  "title": "Our Services",
+  "services": [
+    {
+      "name": "Digital Identity Registration",
+      "description": "Register and manage your secure digital identity with ease."
+    },
+    {
+      "name": "Identity Verification",
+      "description": "Verify your identity quickly and securely using our advanced verification tools."
+    },
+    {
+      "name": "User Management Dashboard",
+      "description": "Admins can view, manage, and verify users through an intuitive dashboard."
+    },
+    {
+      "name": "Document Upload",
+      "description": "Upload and store identity documents safely for verification purposes."
+    }
+  ]
+}
